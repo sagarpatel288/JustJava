@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"કોફી શોપ "</string>
+    <string name="label_quantity_title">માત્રા</string>
+    <string name="label_quantity_value">૨</string>
+    <string name="label_order">ઓર્ડર</string>
+    <string name="label_order_summary">"ઓર્ડર સારાંશ "</string>
+    <string name="label_order_price_value">રૂ૧૦</string>
+    <string name="string_free">મફત</string>
+    <string name="string_total_dollar">કુલ: રૂ</string>
+    <string name="string_thank_you">આભાર!</string>
+    <string name="string_customer_name">નામ:</string>
+    <string name="label_toppings">"ટોપિંગ "</string>
+    <string name="label_whipped_cream">મલાઈ</string>
+    <string name="string_added_whipped_cream">મલાઈ?</string>
+    <string name="string_true">હા</string>
+    <string name="string_false">ના</string>
+    <string name="label_chocolate">ચોકોલેટ</string>
+    <string name="string_added_chocolate">ચોકોલેટ?</string>
+    <string name="label_name">નામ</string>
+    <string name="error_msg_empty_name">મહેરબાની કરીને તમારું નામ જણાવો</string>
+    <string name="error_msg_limit_max_coffee_reached">"૧૦૦ કરતા વધુ કોફી ઓર્ડર કરવા માટે મહેરબાની કરીને અમારી \"BulkCoffee\" એપનો ઉપયોગ કરો "</string>
+    <string name="error_msg_limit_min_coffee_reached">માફ કરશો! એક કરતા ઓછી કોફીનો ઓર્ડર ના લઇ શકીએ!</string>
+    <string name="label_msg_email_subject">"કોફી ઓર્ડર કરનાર: "</string>
+</resources>

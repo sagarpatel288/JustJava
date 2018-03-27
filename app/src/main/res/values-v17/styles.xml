@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BesidePadding">
+        <item name="android:paddingStart">@dimen/view_space</item>
+        <item name="android:paddingLeft">@dimen/view_space</item>
+        <item name="android:paddingEnd">@dimen/view_space</item>
+        <item name="android:paddingRight">@dimen/view_space</item>
+    </style>
+
+    <style name="MatchWidthWrapHeight.Checkbox">
+        <item name="android:paddingTop">@dimen/view_space</item>
+        <item name="android:paddingLeft">@dimen/view_space_medium</item>
+        <item name="android:paddingStart">@dimen/view_space_medium</item>
+        <item name="android:paddingRight">@dimen/view_space_medium</item>
+        <item name="android:paddingEnd">@dimen/view_space_medium</item>
+        <item name="android:paddingBottom">@dimen/view_space</item>
+        <item name="android:textSize">@dimen/tv_heading_three</item>
+    </style>
+</resources>

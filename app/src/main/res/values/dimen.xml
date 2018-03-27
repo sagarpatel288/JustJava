@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_space_short">8dp</dimen>
+    <dimen name="view_space">16dp</dimen>
+    <dimen name="view_space_medium">24dp</dimen>
+    <dimen name="tv_heading_three">16sp</dimen>
+    <dimen name="btn_small_symbol">48dp</dimen>
+    <dimen name="width_divider">1dp</dimen>
+</resources>

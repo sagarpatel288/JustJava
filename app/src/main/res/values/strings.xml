@@ -1,0 +1,46 @@
+<resources>
+    <!--Name of the app-->
+    <string name="app_name">Coffee Shop</string>
+    <!--Quantity title [CHAR LIMIT = NONE]-->
+    <string name="label_quantity_title">quantity</string>
+    <!--Initial quantity value [CHAR LIMIT = 10]-->
+    <string name="label_quantity_value">2</string>
+    <!--Order label on button [CHAR LIMIT = 10 to keep the button in single line!]-->
+    <string name="label_order">order</string>
+    <!--Order summary title [CHAR LIMIT = NONE]-->
+    <string name="label_order_summary">Order summary</string>
+    <!--Total cost of the order [CHAR LIMIT = NONE]. Multiline.-->
+    <string name="label_order_price_value">$10</string>
+    <!--Increment symbol being shown on increment button-->
+    <string name="symbol_plus">+</string>
+    <!--Decrement symbol being shown on decrement button-->
+    <string name="symbol_minus">-</string>
+    <!--Shows total cost in order summary [CHAR LIMIT = NONE]. $ is currency symbol.-->
+    <string name="string_total_dollar">Total: $</string>
+    <!--Will be appended in order summary. [CHAR LIMIT = NONE]-->
+    <string name="string_thank_you">Thank you!</string>
+    <!--Title for add-ons. [CHAR LIMIT = 20]-->
+    <string name="label_toppings">Toppings</string>
+    <!--First add-on. Being used with checkbox as text. [CHAR LIMIT = 20]-->
+    <string name="label_whipped_cream">Whipped Cream</string>
+    <!--Being used in order summary. Shows title for first add on. [CHAR LIMIT = 20]-->
+    <string name="string_added_whipped_cream">Add whipped cream? </string>
+    <!--Value for add-on. It is used if the add-on is checked true. [CHAR LIMIT = 20]-->
+    <string name="string_true">True</string>
+    <!--Value for add-on. It is used if the add-on is checked false. [CHAR LIMIT = 20]-->
+    <string name="string_false">false</string>
+    <!--Second add-on. Being used with checkbox as text. [CHAR LIMIT = 20]-->
+    <string name="label_chocolate">Chocolate</string>
+    <!--Being used in order summary. Shows title for second add on. [CHAR LIMIT = 20]-->
+    <string name="string_added_chocolate">Add chocolate? </string>
+    <!--Being used as hint for TextInputEditText as well as title in order summary. [CHAR LIMIT = 20]-->
+    <string name="label_name">Name</string>
+    <!--An error, being shown for TextInputLayout if input field is empty while trying to give order. [CHAR LIMIT = 50]-->
+    <string name="error_msg_empty_name">Please enter your name</string>
+    <!--A toast message, being shown while trying to increase quantity more than 100 [CHAR LIMIT = 200]-->
+    <string name="error_msg_limit_max_coffee_reached">Kindly use our \"BulkCoffee\" app to order more than 100 cups of coffee.</string>
+    <!--A toast message, being shown while trying to decrease quantity less than 1 [CHAR LIMIT = 200]-->
+    <string name="error_msg_limit_min_coffee_reached">You cannot have less than one coffee</string>
+    <!--A subject body in an email. [CHAR LIMIT = 40]-->
+    <string name="label_msg_email_subject">Coffee order for </string>
+</resources>
