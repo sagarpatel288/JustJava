@@ -1,11 +1,4 @@
 package com.example.android.justjava.ui;
-/**
- * IMPORTANT: Make sure you are using the correct package name.
- * This example uses the package name:
- * package com.example.android.justjava
- * If you get an error when copying this code into Android studio, update it to match teh package name found
- * in the project's AndroidManifest.xml file.
- **/
 
 import android.content.Intent;
 import android.net.Uri;
@@ -77,6 +70,12 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         tietName = findViewById(R.id.tiet_name);
     }
 
+    /**
+     * Sets required listeners on views
+     * Being called inside {@link #onCreate(Bundle)}
+     *
+     * @since 1.0
+     */
     private void setListeners() {
         tilName.setErrorEnabled(true);
         btnIncrement.setOnTouchListener(this);
@@ -133,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
      * @since 1.0
      */
     private void displayOrderSummary(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.tv_order_summary);
+        TextView orderSummaryTextView = findViewById(R.id.tv_order_summary);
         orderSummaryTextView.setText(message);
     }
 
@@ -286,7 +285,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
      * @since 1.0
      */
     private void display(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        TextView quantityTextView = findViewById(R.id.quantity_text_view);
         quantityTextView.setText(String.format(Locale.US, "%d", number));
     }
 
@@ -302,10 +301,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
 
     @Override
     public void afterTextChanged(Editable s) {
-        if (s.toString().length() > 0){
+        if (s.toString().length() > 0) {
             tilName.setError(null);
             tilName.setErrorEnabled(false);
-        } else if (s.toString().length() == 0){
+        } else if (s.toString().length() == 0) {
             tilName.setErrorEnabled(true);
             tilName.setError(getString(R.string.error_msg_empty_name));
         }

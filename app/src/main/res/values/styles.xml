@@ -10,26 +10,31 @@
         <item name="colorButtonNormal">@color/colorAccent</item>
     </style>
 
+    <!--Sets width to match_partent and height to wrap_content-->
     <style name="MatchWidthWrapHeight">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <!--In addition to style "MatchWidthWrapHeight", this style adds beside padding. Override in values-v17-->
     <style name="MatchWidthWrapHeight.BesidePadding">
         <item name="android:paddingLeft">@dimen/view_space</item>
         <item name="android:paddingRight">@dimen/view_space</item>
     </style>
 
+    <!--In addition to style "BesidePadding", this style adds top and bottom padding as well.-->
     <style name="MatchWidthWrapHeight.BesidePadding.SurroundPadding">
         <item name="android:paddingTop">@dimen/view_space</item>
         <item name="android:paddingBottom">@dimen/view_space</item>
     </style>
 
+    <!--This style is being used for title text. E.g. "Quantity" title-->
     <style name="MatchWidthWrapHeight.TextTitle">
         <item name="android:textSize">@dimen/tv_heading_three</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
+    <!--This style is being used for add-on checkboxes. E.g., "Whipped Cream"-->
     <style name="MatchWidthWrapHeight.Checkbox">
         <item name="android:paddingTop">@dimen/view_space</item>
         <item name="android:paddingLeft">@dimen/view_space_medium</item>
@@ -38,11 +43,13 @@
         <item name="android:textSize">@dimen/tv_heading_three</item>
     </style>
 
+    <!--This style is being used for normal text body. E.g., order summary value -->
     <style name="TextBody">
         <item name="android:textSize">@dimen/tv_heading_three</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
 
+    <!--This style sets both width and height to wrap_content-->
     <style name="TextBody.WrapWidthWrapHeight">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
