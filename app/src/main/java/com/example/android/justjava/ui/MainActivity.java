@@ -23,6 +23,9 @@ import com.example.android.justjava.constants.AppConstants;
 
 import java.util.Locale;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 import static com.example.android.justjava.constants.AppConstants.ADD_ON_CHOCOLATE;
 import static com.example.android.justjava.constants.AppConstants.ADD_ON_WHIPPED_CREAM;
 import static com.example.android.justjava.constants.AppConstants.BASE_PRICE_COFFEE;
@@ -33,21 +36,33 @@ import static com.example.android.justjava.constants.AppConstants.INIT_COFFEE;
  */
 public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, TextWatcher, View.OnTouchListener, View.OnClickListener {
 
+    @BindView(R.id.tiet_name)
+    TextInputEditText tietName;
+    @BindView(R.id.til_name)
+    TextInputLayout tilName;
+    @BindView(R.id.tv_order_summary)
+    TextView tvOrderSummary;
+    @BindView(R.id.cb_whipped_cream)
+    CheckBox cbWhippedCream;
+    @BindView(R.id.cb_chocolate)
+    CheckBox cbChocolate;
+    @BindView(R.id.btn_decrement)
+    Button btnDecrement;
+    @BindView(R.id.tv_quantity)
+    TextView tvQuantity;
+    @BindView(R.id.btn_increment)
+    Button btnIncrement;
+
     private int quantity = INIT_COFFEE;
-    private CheckBox cbWhippedCream;
-    private CheckBox cbChocolate;
-    private TextInputEditText tietName;
-    private Button btnIncrement;
     private boolean autoIncrement;
     private boolean autoDecrement;
-    private Button btnDecrement;
     private Handler updateHandler = new Handler();
-    private TextInputLayout tilName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         findViewsByIds();
         setListeners();
     }
@@ -132,8 +147,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
      * @since 1.0
      */
     private void displayOrderSummary(String message) {
-        TextView orderSummaryTextView = findViewById(R.id.tv_order_summary);
-        orderSummaryTextView.setText(message);
+        tvOrderSummary.setText(message);
     }
 
     /**
@@ -285,8 +299,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
      * @since 1.0
      */
     private void display(int number) {
-        TextView quantityTextView = findViewById(R.id.quantity_text_view);
-        quantityTextView.setText(String.format(Locale.US, "%d", number));
+        tvQuantity.setText(String.format(Locale.US, "%d", number));
     }
 
     @Override
@@ -409,8 +422,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     }
 
     /*
-    * Dedicated thread to update ui
-    */
+     * Dedicated thread to update ui
+     */
     public class QuantityModifier implements Runnable {
 
         @Override
