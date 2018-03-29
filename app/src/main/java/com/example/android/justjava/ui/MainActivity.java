@@ -63,26 +63,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        findViewsByIds();
         setListeners();
-    }
-
-    /**
-     * XML Parsing
-     * <p>
-     * Finds and binds views of XML layout using their Ids
-     * <p>
-     * Being used inside {@link #onCreate(Bundle)}
-     *
-     * @since 1.0
-     */
-    private void findViewsByIds() {
-        btnIncrement = findViewById(R.id.btn_increment);
-        btnDecrement = findViewById(R.id.btn_decrement);
-        cbWhippedCream = findViewById(R.id.cb_whipped_cream);
-        cbChocolate = findViewById(R.id.cb_chocolate);
-        tilName = findViewById(R.id.til_name);
-        tietName = findViewById(R.id.tiet_name);
     }
 
     /**
